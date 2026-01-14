@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký câu lạc bộ - THPT Nguyễn Đình Chiểu</title>
+    <style>
+        body {
+            background-color: #f2f6ff;
+            font-family: Arial, sans-serif;
+            color: #003366;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .tieude {
+            background-color: #0056a3;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .form-container {
+            background-color: white;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        /* Lưu ý: Đã thêm style cho input[type="tel"] để ô số điện thoại hiển thị đẹp như các ô khác */
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%; /* Sửa lại width để không bị tràn viền do padding mặc định của trình duyệt, nên dùng box-sizing nếu cần thiết */
+            width: calc(100% - 22px); /* Trừ hao padding và border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #0056a3;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+        a {
+            color: #cc0000;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #009933;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tieude">
+        <h1>ĐĂNG KÝ THAM GIA CÂU LẠC BỘ</h1>
+        <p>Trường THPT Nguyễn Đình Chiểu - Bến Tre</p>
+    </div>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên của bạn..." required>
+
+            <label for="class">Lớp:</label>
+            <input type="text" id="class" name="class" placeholder="Ví dụ: 11A1" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại liên hệ..." required>
+
+            <label for="club">Lựa chọn câu lạc bộ:</label>
+            <select id="club" name="club">
+                <option value="thethao">Câu lạc bộ Thể thao</option>
+                <option value="thiennguyen">Câu lạc bộ Thiện Nguyện</option>
+                <option value="truyenthong">Câu lạc bộ Truyền Thông Và Sự Kiện</option>
+            </select>
+
+            <input type="submit" value="Gửi Đăng Ký">
+        </form>
+    </div>
+
+    <footer>
+        <p><a href="Ngọc Tấn.html">⬅️ Quay về trang chính</a></p>
+        <p>© Trường THPT Nguyễn Đình Chiểu - Bến Tre</p>
+    </footer>
+
+</body>
+</html>
